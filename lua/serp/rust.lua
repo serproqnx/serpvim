@@ -1,13 +1,21 @@
+require('lspconfig')['rust_analyzer'].setup{
+	on_attach = on_attach,
+	flags = lsp_flags,
+	-- Server-specific settings... 
+	settings = {
+		['rust-analyzer'] = {}
+	}
+}
+
 
 -- setup rust_analyzer LSP (IDE features)
-
-require('nvim_lsp').rust_analyzer.setup{}
+-- require('nvim_lsp').rust_analyzer.setup({})
 
 
 
 -- Use LSP omni-completion in Rust files
 
--- autocmd Filetype rust setlocal omnifunc=v:lua.vim.lsp.omnifunc
+-- vim.api.nvim_command('autocmd Filetype rust setlocal omnifunc=v:lua.vim.lsp.omnifunc')
 -- vim.api.nvim_create_autocmd(
 
 

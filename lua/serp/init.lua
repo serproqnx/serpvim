@@ -1,3 +1,5 @@
+require("serp.packer")
 require("serp.set")
+require("serp.keymap")
 require("serp.remap")
 require("serp.rust")

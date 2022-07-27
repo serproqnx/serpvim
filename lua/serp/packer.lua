@@ -10,6 +10,7 @@ return require('packer').startup(function()
 	use 'folke/tokyonight.nvim'
 
 -- Rust env
+	use 'neovim/nvim-lsp'	
 	use 'neovim/nvim-lspconfig'	
 	use	{ 'Shougo/deoplete.nvim', config = 'vim.cmd[[UpdateRemotePlugins]]' }
 	use 'Shougo/deoplete-lsp'
