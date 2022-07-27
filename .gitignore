@@ -1,6 +1,7 @@
-*
+/*
 !.gitignore
 !*.lua
 !*._vim
-!/lua
+!lua/
+!after/
 
