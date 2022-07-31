@@ -25,3 +25,5 @@ vim.g.mapleader = " "
 vim.opt.guifont= "Iosevka:h11"
 vim.opt.encoding = "UTF-8"
 vim.opt.wildmode = "longest,list,full"
+
+vim.opt.termguicolors = true
