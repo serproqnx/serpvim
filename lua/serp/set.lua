@@ -15,7 +15,7 @@ vim.opt.smartcase = true
 vim.opt.swapfile = false 
 vim.opt.backup = false 
 vim.opt.undofile = true
-vim.opt.incsearch = true
+vim.opt.incsearch = true 
 vim.opt.scrolloff = 8
 vim.opt.colorcolumn = "80"
 vim.opt.signcolumn = "yes" 
@@ -27,3 +27,5 @@ vim.opt.encoding = "UTF-8"
 vim.opt.wildmode = "longest,list,full"
 
 vim.opt.termguicolors = true
+
+vim.cmd("language messages English_United States")
