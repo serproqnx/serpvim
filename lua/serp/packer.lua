@@ -30,6 +30,7 @@ return require('packer').startup(function()
 -- Rust env
 	use 'neovim/nvim-lsp'	
 	use 'neovim/nvim-lspconfig'	
+	use 'rust-lang/rust.vim'
 
 -- Completion framework
 	use 'hrsh7th/nvim-cmp'

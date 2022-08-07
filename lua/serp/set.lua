@@ -20,6 +20,8 @@ vim.opt.scrolloff = 8
 vim.opt.colorcolumn = "80"
 vim.opt.signcolumn = "yes" 
 
+vim.opt.hlsearch = false
+
 vim.g.mapleader = " "
 
 vim.opt.guifont= "Iosevka:h11"
@@ -28,4 +30,5 @@ vim.opt.wildmode = "longest,list,full"
 
 vim.opt.termguicolors = true
 
-vim.cmd("language messages English_United States")
+-- vim.cmd("language messages English_United States")
+vim.cmd("language messages en_US.utf8")
