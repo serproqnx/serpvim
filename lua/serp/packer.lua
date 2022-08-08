@@ -63,7 +63,7 @@ return require('packer').startup(function()
 	use 'nvim-lua/plenary.nvim'
 	use 'mfussenegger/nvim-dap'
 	use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
-	use 'puremourning/vimspector'
+	--use 'puremourning/vimspector'
 	--use	{ 'Shougo/deoplete.nvim', config = 'vim.cmd[[UpdateRemotePlugins]]' }
 	--use 'Shougo/deoplete-lsp'
 	--use 'ervandew/supertab'
