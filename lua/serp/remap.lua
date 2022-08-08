@@ -10,7 +10,10 @@ nnoremap("<leader>tg", "<cmd> :Telescope live_grep<CR>")
 -- nnoremap("<leader>tr", "<cmd> :Telescope lsp_references theme=cursor<CR>")
 nnoremap("<leader>tr", "<cmd> :Telescope lsp_references<CR>")
 
-
+nnoremap("<leader>c", "<cmd> :tabe %<CR>")
 nnoremap("<leader><leader>", "<cmd>lua ReloadConfig()<CR>")
 
+--RUST
+
+nnoremap("<leader>rr", "<cmd> :RustRunnables <CR> 1 <CR>")
 

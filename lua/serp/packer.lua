@@ -57,11 +57,13 @@ return require('packer').startup(function()
 -- Optional
 	use 'nvim-lua/popup.nvim'
 	use 'nvim-telescope/telescope.nvim'
-	
+	use 'nvim-telescope/telescope-ui-select.nvim'	
+
 	-- Debugging
 	use 'nvim-lua/plenary.nvim'
 	use 'mfussenegger/nvim-dap'
-	
+	use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+	use 'puremourning/vimspector'
 	--use	{ 'Shougo/deoplete.nvim', config = 'vim.cmd[[UpdateRemotePlugins]]' }
 	--use 'Shougo/deoplete-lsp'
 	--use 'ervandew/supertab'
