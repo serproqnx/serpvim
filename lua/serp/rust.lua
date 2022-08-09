@@ -3,20 +3,20 @@ local nvim_lsp = require'lspconfig'
 -- debug
 
 if vim.fn.has("unix") == 1 then
-	print("Platform: unix")
+--	print("Platform: unix")
 	extension_path = vim.env.HOME .. '/.vscode-oss/extensions/vadimcn.vscode-lldb-1.7.3/'
 	codelldb_path = extension_path .. 'adapter/codelldb'
 	liblldb_path = extension_path .. 'lldb/lib/liblldb.so'
 elseif vim.fn.has("win32") == 1 then
-	print("Platform: win32")
+--	print("Platform: win32")
 	extension_path = vim.env.HOME .. '\\.vscode\\extensions\\vadimcn.vscode-lldb-1.7.3\\'
 	codelldb_path = extension_path .. 'adapter\\codelldb'
 	liblldb_path = extension_path .. 'lldb\\bin\\liblldb.dll'
 end
 
-print(extension_path)
-print(codelldb_path)
-print(liblldb_path)
+-- print(extension_path)
+-- print(codelldb_path)
+-- print(liblldb_path)
 
 local opts = {
 		dap = {
