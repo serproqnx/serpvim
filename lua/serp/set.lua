@@ -33,3 +33,5 @@ vim.opt.termguicolors = true
 
 -- vim.cmd("language messages English_United States")
 vim.cmd("language messages en_US.utf8")
+
+vim.opt.showmode = false 

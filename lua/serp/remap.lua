@@ -1,5 +1,7 @@
 local nnoremap = require("serp.keymap").nnoremap
 
+nnoremap("<leader>cd", "<cmd>:cd %:h<CR>")
+
 -- CFG
 nnoremap("<leader>cfg", "<cmd>lua get_cfg_dir()<CR>")
 
@@ -19,13 +21,6 @@ nnoremap("<leader>rr", "<cmd> :RustRunnables <CR>")
 
 -- DEBUG
 nnoremap("<leader>rd", "<cmd> :RustDebuggables <CR>")
-
-
-
-
-
-
-
 
 
 if vim.fn.has("unix") == 1 then
