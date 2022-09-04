@@ -35,3 +35,7 @@ vim.opt.termguicolors = true
 vim.cmd("language messages en_US.utf8")
 
 vim.opt.showmode = false 
+
+vim.opt.clipboard = "unnamedplus"
+
+

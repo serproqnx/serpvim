@@ -5,6 +5,7 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
 
+
 -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 	
@@ -18,6 +19,7 @@ return require('packer').startup(function()
 	}
 
 	use 'p00f/nvim-ts-rainbow'
+
 
 	use {
 		'kyazdani42/nvim-tree.lua',
@@ -58,6 +60,13 @@ return require('packer').startup(function()
 	use 'nvim-lua/popup.nvim'
 	use 'nvim-telescope/telescope.nvim'
 	use 'nvim-telescope/telescope-ui-select.nvim'	
+	-- wiki, notetaking
+	use 'renerocksai/telekasten.nvim'
+	use 'renerocksai/calendar-vim'
+	use 'nvim-telescope/telescope-symbols.nvim'
+	use 'iamcco/markdown-preview.nvim'
+	use 'mzlogin/vim-markdown-toc'
+	use 'nvim-telescope/telescope-media-files.nvim'
 
 	-- Debugging
 	use 'nvim-lua/plenary.nvim'
@@ -69,4 +78,24 @@ return require('packer').startup(function()
 	--use 'ervandew/supertab'
 	--use 'Chiel92/vim-autoformat'
 	--	use 'kien/rainbow_parentheses.vim'
+	--
+		-- emacs orgmode 
+		--	use { 
+		--		"nvim-neorg/neorg",
+		--			config = function()
+		--					require('neorg').setup {
+		--						load = {
+		--										["core.defaults"] = {},
+		--										["core.norg.dirman"] = {
+		--											config = {
+		--													workspaces = {
+		--															work = "~/p/notes/work",
+		--															home = "~/p/notes/home",
+		--													}
+		--											}
+		--				  					},
+		--								}
+		--						}
+		--			end
+		--	}
 end)
