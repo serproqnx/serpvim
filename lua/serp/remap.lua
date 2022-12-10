@@ -18,6 +18,7 @@ nnoremap("<leader><leader>", "<cmd>lua ReloadConfig()<CR>")
 
 -- RUST
 nnoremap("<leader>rr", "<cmd> :RustRunnables <CR>")
+nnoremap("<leader>ra", "<cmd> :RustCodeAction <CR>")
 
 -- DEBUG
 nnoremap("<leader>rd", "<cmd> :RustDebuggables <CR>")

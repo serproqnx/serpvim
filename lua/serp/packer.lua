@@ -33,7 +33,15 @@ return require('packer').startup(function()
 	use 'neovim/nvim-lsp'	
 	use 'neovim/nvim-lspconfig'	
 	use 'rust-lang/rust.vim'
-
+  use {
+      'saecki/crates.nvim',
+      tag = 'v0.3.0',
+      requires = { 'nvim-lua/plenary.nvim' },
+      config = function()
+          require('crates').setup()
+      end,
+  }
+  --
 -- Completion framework
 	use 'hrsh7th/nvim-cmp'
 
