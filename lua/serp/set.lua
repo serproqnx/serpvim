@@ -32,10 +32,12 @@ vim.opt.guifont= "Iosevka:h11"
 vim.opt.encoding = "UTF-8"
 vim.opt.wildmode = "longest,list,full"
 
+vim.g.neovide_scale_factor = 1.7
+
 vim.opt.termguicolors = true
 
 -- vim.cmd("language messages English_United States")
-vim.cmd("language messages en_US.utf8")
+-- vim.cmd("language messages en_US.utf8")
 
 vim.opt.showmode = false 
 
