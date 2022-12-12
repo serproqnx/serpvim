@@ -33,7 +33,7 @@ vim.opt.guifont= "Iosevka:h12"
 vim.opt.encoding = "UTF-8"
 vim.opt.wildmode = "longest,list,full"
 
-vim.g.neovide_scale_factor = 1.7
+-- vim.g.neovide_scale_factor = 1.7
 
 vim.opt.termguicolors = true
 
@@ -45,3 +45,10 @@ vim.opt.showmode = false
 vim.opt.clipboard = "unnamedplus"
 
 
+if vim.fn.has("macunix") == 1 then
+  vim.g.neovide_scale_factor = 1.7
+elseif vim.fn.has("win32") == 1 then
+  vim.g.neovide_scale_factor = 1
+elseif vim.fn.has("unix") == 1 then
+  vim.g.neovide_scale_factor = 1.0
+end
