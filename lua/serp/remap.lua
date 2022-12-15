@@ -7,7 +7,7 @@ if vim.fn.has("unix") == 1 then
 elseif vim.fn.has("win32") == 1 then
 --	print("Platform: win32")"
   run_term_string = ":vsplit term://pwsh"
-  nnoremap("<leader>1", "<cmd>split term://pwsh<CR>")
+  nnoremap("<leader>`", "<cmd>split term://pwsh -noprofile<CR>")
 	cfg_dir = "~/AppData/Local/nvim"
 end
 
