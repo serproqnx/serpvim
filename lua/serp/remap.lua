@@ -13,16 +13,14 @@ end
 
 function get_term() return run_term_string end
 function get_cfg_dir() return cfg_dir end
+
 -- TERMINAL
-
 --nnoremap("<leader>`", "<cmd>lua get_term()<CR>")
-
 nnoremap("<leader>cd", "<cmd>:cd %:h<CR>")
 
 -- CFG
 nnoremap("<leader>cfg", "<cmd>lua get_cfg_dir()<CR>")
-
--- nnoremap("<leader>pv", "<cmd>Ex<CR>"
+-- nnoremap("<leader>pv", "<cmd>Ex<CR>")
 nnoremap("<leader>pv", "<cmd> :Ex<CR>")
 
 -- Telescope
@@ -30,7 +28,6 @@ nnoremap("<leader>tf", "<cmd> :Telescope find_files theme=dropdown<CR>")
 nnoremap("<leader>tg", "<cmd> :Telescope live_grep theme=dropdown<CR>")
 -- nnoremap("<leader>tr", "<cmd> :Telescope lsp_references theme=cursor<CR>")
 nnoremap("<leader>tr", "<cmd> :Telescope lsp_references<CR>")
-
 nnoremap("<leader><leader>", "<cmd>lua ReloadConfig()<CR>")
 
 -- RUST
@@ -45,6 +42,4 @@ nnoremap("<leader>zf", ":lua require('telekasten').find_notes()<CR>")
 nnoremap("<leader>zd", ":lua require('telekasten').find_daily_notes()<CR>")
 nnoremap("<leader>zg", ":lua require('telekasten').search_notes()<CR>")
 nnoremap("<leader>zz", ":lua require('telekasten').follow_link()<CR>")
-
 nnoremap("<leader>z", ":lua require('telekasten').panel()<CR>")
-
