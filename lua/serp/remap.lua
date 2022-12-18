@@ -3,6 +3,7 @@ local nnoremap = require("serp.keymap").nnoremap
 if vim.fn.has("unix") == 1 then
 --	print("Platform: unix")
   run_term_string = "term://bash"
+  nnoremap("<leader>`", "<cmd>split term://bash<CR>")
 	cfg_dir = "~/.config/nvim" 
 elseif vim.fn.has("win32") == 1 then
 --	print("Platform: win32")"

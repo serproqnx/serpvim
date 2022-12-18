@@ -23,6 +23,7 @@ return require('packer').startup(function()
 -- AIRLINE
 	use 'vim-airline/vim-airline'
 	use 'vim-airline/vim-airline-themes'
+  use 'sheerun/vim-polyglot'
 
 	use { 
 		'nvim-treesitter/nvim-treesitter',
