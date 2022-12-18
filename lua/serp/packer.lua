@@ -18,7 +18,8 @@ return require('packer').startup(function()
   use 'preservim/tagbar'
 
 -- GIT
-  use 'jreybert/vimagit'
+  use 'tpope/vim-fugitive'
+	use 'jreybert/vimagit'
 
 -- AIRLINE
 	use 'vim-airline/vim-airline'
