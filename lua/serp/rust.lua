@@ -44,6 +44,7 @@ local opts = {
             -- to enable rust-analyzer settings visit:
             -- https://github.com/rust-analyzer/rust-analyzer/blob/master/docs/user/generated_config.adoc
             ["rust-analyzer"] = {
+                inlayHints = { locationLinks = false },
                 -- enable clippy on save
                 checkOnSave = {
                     command = "clippy"
@@ -113,7 +114,8 @@ vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, bufopts)
 vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
 vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-vim.keymap.set('n', '<leader>f', vim.lsp.buf.formatting, bufopts)
+-- vim.keymap.set('n', '<leader>f', vim.lsp.buf.formatting, bufopts)
+vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, bufopts, { async = true })
 --
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

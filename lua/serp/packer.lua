@@ -81,6 +81,7 @@ return require('packer').startup(function()
 	use 'nvim-lua/popup.nvim'
 	use 'nvim-telescope/telescope.nvim'
 	use 'nvim-telescope/telescope-ui-select.nvim'	
+	use 'xiyaowong/telescope-emoji.nvim'	
 	-- wiki, notetaking
 	use 'renerocksai/telekasten.nvim'
 	use 'renerocksai/calendar-vim'
@@ -88,7 +89,7 @@ return require('packer').startup(function()
 	use 'iamcco/markdown-preview.nvim'
 	use 'mzlogin/vim-markdown-toc'
 	use 'nvim-telescope/telescope-media-files.nvim'
-
+	use 'nvim-telescope/telescope-file-browser.nvim'
 	-- Debugging
 	use 'nvim-lua/plenary.nvim'
 	use 'mfussenegger/nvim-dap'

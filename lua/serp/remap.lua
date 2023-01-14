@@ -25,6 +25,8 @@ nnoremap("<leader>cfg", "<cmd>lua get_cfg_dir()<CR>")
 nnoremap("<leader>pv", "<cmd> :Ex<CR>")
 
 -- Telescope
+nnoremap("<leader>tb", "<cmd> :Telescope file_browser theme=dropdown<CR>")
+nnoremap("<leader>te", "<cmd> :Telescope emoji<CR>")
 nnoremap("<leader>tf", "<cmd> :Telescope find_files theme=dropdown<CR>")
 nnoremap("<leader>tg", "<cmd> :Telescope live_grep theme=dropdown<CR>")
 -- nnoremap("<leader>tr", "<cmd> :Telescope lsp_references theme=cursor<CR>")

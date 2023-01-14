@@ -45,6 +45,7 @@ vim.opt.clipboard = "unnamedplus"
 if vim.fn.has("macunix") == 1 then
   vim.g.neovide_scale_factor = 1.7
 elseif vim.fn.has("win32") == 1 then
+  vim.g.neovide_refrash_rate = 120
   vim.g.neovide_scale_factor = 1
   vim.cmd("language messages English_United States")
 elseif vim.fn.has("unix") == 1 then
