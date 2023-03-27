@@ -41,6 +41,13 @@ vim.opt.showmode = false
 
 vim.opt.clipboard = "unnamedplus"
 
+-- NEOVIDE
+
+-- vim.g.neovide_transparency = 0.8
+-- vim.g.neovide_transparency_point = 0.8
+
+
+-- PLATFORM
 
 if vim.fn.has("macunix") == 1 then
   vim.g.neovide_scale_factor = 1.7

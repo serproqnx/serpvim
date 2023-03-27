@@ -37,6 +37,7 @@ require('telekasten').setup({
     -- "uuid" - Use uuid
     -- "uuid-title" - Prefix title by uuid
     -- "title-uuid" - Suffix title with uuid
+    filename_spce_subst = "_",
     new_note_filename = "title",
     -- file uuid type ("rand" or input for os.date()")
     uuid_type = "%Y%m%d%H%M",
