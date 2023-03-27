@@ -41,6 +41,13 @@ vim.opt.showmode = false
 
 vim.opt.clipboard = "unnamedplus"
 
+-- NEOVIDE
+
+-- vim.g.neovide_transparency = 0.8
+-- vim.g.neovide_transparency_point = 0.8
+
+
+-- PLATFORM
 
 if vim.fn.has("macunix") == 1 then
   vim.g.neovide_scale_factor = 1.7
@@ -49,5 +56,5 @@ elseif vim.fn.has("win32") == 1 then
   vim.g.neovide_scale_factor = 1
   vim.cmd("language messages English_United States")
 elseif vim.fn.has("unix") == 1 then
-  vim.g.neovide_scale_factor = 1.5
+  vim.g.neovide_scale_factor = 1.0
 end
