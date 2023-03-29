@@ -28,7 +28,7 @@ vim.opt.hlsearch = false
 
 vim.g.mapleader = " "
 
-vim.opt.guifont = "Iosevka:h12"
+vim.opt.guifont = "Iosevka Nerd Font:h12"
 vim.opt.encoding = "UTF-8"
 vim.opt.wildmode = "longest,list,full"
 
