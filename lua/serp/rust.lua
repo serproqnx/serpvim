@@ -1,3 +1,5 @@
+vim.g.rust_recommended_style = false
+
 local nvim_lsp = require'lspconfig'
 
 -- debug
