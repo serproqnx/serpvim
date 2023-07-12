@@ -51,6 +51,9 @@ local opts = {
                 checkOnSave = {
                     command = "clippy"
                 },
+                check = {
+                    allTargets = true
+                }
             }
         }
     },
