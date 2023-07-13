@@ -7,5 +7,5 @@ require("serp.treesitter")
 require("serp.reload")
 require("serp.telescope")
 require("serp.telekasten")
-
+require("serp.noice")
 -- require("serp.nvim-tree")

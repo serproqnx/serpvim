@@ -46,3 +46,35 @@ nnoremap("<leader>zd", ":lua require('telekasten').find_daily_notes()<CR>")
 nnoremap("<leader>zg", ":lua require('telekasten').search_notes()<CR>")
 nnoremap("<leader>zz", ":lua require('telekasten').follow_link()<CR>")
 nnoremap("<leader>z", ":lua require('telekasten').panel()<CR>")
+
+-- Flash
+nnoremap("m", [[<cmd>lua require('flash').jump({ search = { mode = function(str) return "\\<" .. str end, }, })<CR>]])
+nnoremap("<leader>j", [[<cmd>lua require('flash').jump({ search = { mode = function(str) return "\\<" .. str end, }, })<CR>]])
+		-- 			require("flash").jump()
+		-- 			require("flash").treesitter()
+		-- 			require("flash").remote()
+		-- 			require("flash").treesitter_search()
+		-- 			require("flash").toggle()
+
+-- Trouble
+
+-- nnoremap("<leader>xx", "<cmd>TroubleToggle<CR>")
+-- nnoremap("<leader>xx", "<cmd>TroubleToggle<CR>")
+vim.keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<cr>",
+  {silent = true, noremap = true}
+)
+vim.keymap.set("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>",
+  {silent = true, noremap = true}
+)
+vim.keymap.set("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>",
+  {silent = true, noremap = true}
+)
+vim.keymap.set("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>",
+  {silent = true, noremap = true}
+)
+vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",
+  {silent = true, noremap = true}
+)
+vim.keymap.set("n", "gR", "<cmd>TroubleToggle lsp_references<cr>",
+  {silent = true, noremap = true}
+)

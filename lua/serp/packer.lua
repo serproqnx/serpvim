@@ -96,30 +96,8 @@ return require('packer').startup(function()
 	use 'nvim-lua/plenary.nvim'
 	use 'mfussenegger/nvim-dap'
 	use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
-	--use 'puremourning/vimspector'
-	--use	{ 'Shougo/deoplete.nvim', config = 'vim.cmd[[UpdateRemotePlugins]]' }
-	--use 'Shougo/deoplete-lsp'
-	--use 'ervandew/supertab'
-	--use 'Chiel92/vim-autoformat'
-	--	use 'kien/rainbow_parentheses.vim'
-	--
-		-- emacs orgmode 
-		--	use { 
-		--		"nvim-neorg/neorg",
-		--			config = function()
-		--					require('neorg').setup {
-		--						load = {
-		--										["core.defaults"] = {},
-		--										["core.norg.dirman"] = {
-		--											config = {
-		--													workspaces = {
-		--															work = "~/p/notes/work",
-		--															home = "~/p/notes/home",
-		--													}
-		--											}
-		--				  					},
-		--								}
-		--						}
-		--			end
-		--	}
+	-- Navigation
+	use 'folke/flash.nvim'
+	use { 'folke/trouble.nvim', requires = { "nvim-tree/nvim-web-devicons" } }	
+	use { 'folke/noice.nvim', requires = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify"  } }
 end)
