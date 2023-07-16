@@ -32,6 +32,7 @@ nnoremap("<leader>tg", "<cmd> :Telescope live_grep theme=dropdown<CR>")
 -- nnoremap("<leader>tr", "<cmd> :Telescope lsp_references theme=cursor<CR>")
 nnoremap("<leader>tr", "<cmd> :Telescope lsp_references<CR>")
 nnoremap("<leader><leader>", "<cmd>lua ReloadConfig()<CR>")
+nnoremap("<leader>tn", "<cmd> :Noice telescope<CR>")
 
 -- RUST
 nnoremap("<leader>rr", "<cmd> :RustRunnables <CR>")
@@ -49,7 +50,6 @@ nnoremap("<leader>z", ":lua require('telekasten').panel()<CR>")
 
 -- Flash
 nnoremap("m", [[<cmd>lua require('flash').jump({ search = { mode = function(str) return "\\<" .. str end, }, })<CR>]])
-nnoremap("<leader>j", [[<cmd>lua require('flash').jump({ search = { mode = function(str) return "\\<" .. str end, }, })<CR>]])
 		-- 			require("flash").jump()
 		-- 			require("flash").treesitter()
 		-- 			require("flash").remote()
