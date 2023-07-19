@@ -11,8 +11,8 @@ return require('packer').startup(function()
 -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   	
-	use 'ghifarit53/tokyonight-vim'
-
+	-- use 'ghifarit53/tokyonight-vim'
+  use 'folke/tokyonight.nvim'
 -- COMMENTS
   use 'tpope/vim-commentary'
 
@@ -23,10 +23,17 @@ return require('packer').startup(function()
   use 'tpope/vim-fugitive'
 	use 'jreybert/vimagit'
 
+
+-- LUALINE
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+
 -- AIRLINE
-	use 'vim-airline/vim-airline'
-	use 'vim-airline/vim-airline-themes'
-  use 'sheerun/vim-polyglot'
+	-- use 'vim-airline/vim-airline'
+	-- use 'vim-airline/vim-airline-themes'
+  -- use 'sheerun/vim-polyglot'
 
 	use { 
 		'nvim-treesitter/nvim-treesitter',
