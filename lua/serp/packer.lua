@@ -5,6 +5,12 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
 
+-- file explorer
+    use {
+      'stevearc/oil.nvim',
+      config = function() require('oil').setup() end
+    }
+
 -- shortcut helper
 use {
   "folke/which-key.nvim",
@@ -57,13 +63,13 @@ use {
 	use 'p00f/nvim-ts-rainbow'
 
 
-	use {
-		'kyazdani42/nvim-tree.lua',
-			requires = {
-				'kyazdani42/nvim-web-devicons', -- optional, for file icons
-			},
-		tag = 'nightly' -- optional, updated every week. (see issue #1193)
-	}
+	-- use {
+	-- 	'kyazdani42/nvim-tree.lua',
+	-- 		requires = {
+	-- 			'kyazdani42/nvim-web-devicons', -- optional, for file icons
+	-- 		},
+	-- 	tag = 'nightly' -- optional, updated every week. (see issue #1193)
+	-- }
 
 -- Rust env
 	use 'neovim/nvim-lsp'	
