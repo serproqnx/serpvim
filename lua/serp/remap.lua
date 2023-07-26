@@ -22,7 +22,7 @@ nnoremap("<leader>cd", "<cmd>:cd %:h<CR>")
 -- CFG
 nnoremap("<leader>cfg", "<cmd>lua get_cfg_dir()<CR>")
 -- nnoremap("<leader>pv", "<cmd>Ex<CR>")
-nnoremap("<leader>pv", "<cmd> :Ex<CR>")
+nnoremap("<leader>pv", "<cmd> :Oil.open<CR>")
 
 -- Telescope
 nnoremap("<leader>tb", "<cmd> :Telescope file_browser theme=dropdown<CR>")
