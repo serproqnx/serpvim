@@ -5,6 +5,9 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
 
+-- For Debug
+use "nvim-tree/nvim-web-devicons"
+
 -- shortcut helper
 use {
   "folke/which-key.nvim",
