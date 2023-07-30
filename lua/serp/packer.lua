@@ -5,16 +5,13 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
 
-<<<<<<< HEAD
 -- For Debug
 use "nvim-tree/nvim-web-devicons"
-=======
 -- file explorer
     use {
       'stevearc/oil.nvim',
       config = function() require('oil').setup() end
     }
->>>>>>> d28f1722faa791a317a683b6aba6e4ee49faffa4
 
 -- shortcut helper
 use {
