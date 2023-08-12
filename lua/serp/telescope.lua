@@ -27,3 +27,4 @@ require("telescope").setup {
 require("telescope").load_extension("ui-select")
 require("telescope").load_extension("emoji")
 require("telescope").load_extension("file_browser")
+require('telescope').load_extension('projects')

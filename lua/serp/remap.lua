@@ -25,6 +25,9 @@ nnoremap("<leader>cfg", "<cmd>lua get_cfg_dir()<CR>")
 nnoremap("<leader>pv", "<cmd> :Oil.open<CR>")
 
 -- Telescope
+
+
+nnoremap("<leader>tp", "<cmd> :Telescope projects theme=dropdown<CR>")
 nnoremap("<leader>tb", "<cmd> :Telescope file_browser theme=dropdown<CR>")
 nnoremap("<leader>te", "<cmd> :Telescope emoji<CR>")
 nnoremap("<leader>tf", "<cmd> :Telescope find_files theme=dropdown<CR>")
