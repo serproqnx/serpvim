@@ -6,6 +6,10 @@ vim.cmd [[packadd packer.nvim]]
 --TODO: migrage to lazy
 return require('packer').startup(function()
 
+use 'tpope/vim-dadbod'
+use 'kristijanhusak/vim-dadbod-ui'
+use 'kristijanhusak/vim-dadbod-completion'
+
 use {
   "folke/todo-comments.nvim",
   dependencies = { "nvim-lua/plenary.nvim" },
