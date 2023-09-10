@@ -22,7 +22,7 @@ nnoremap("<leader>cd", "<cmd>:cd %:h<CR>")
 -- CFG
 nnoremap("<leader>cfg", "<cmd>lua get_cfg_dir()<CR>")
 -- nnoremap("<leader>pv", "<cmd>Ex<CR>")
-nnoremap("<leader>pv", "<cmd>:Oil<CR>")
+nnoremap("<leader>pv", "<cmd> :Oil<CR>")
 
 -- Telescope
 
