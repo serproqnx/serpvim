@@ -9,6 +9,14 @@ return require('packer').startup(function(use)
   use 'kristijanhusak/vim-dadbod-ui'
   use 'kristijanhusak/vim-dadbod-completion'
 
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",
+    setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
   use {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -142,7 +150,7 @@ return require('packer').startup(function(use)
   use 'renerocksai/telekasten.nvim'
   use 'renerocksai/calendar-vim'
   use 'nvim-telescope/telescope-symbols.nvim'
-  use 'iamcco/markdown-preview.nvim'
+  -- use 'iamcco/markdown-preview.nvim'
   use 'mzlogin/vim-markdown-toc'
   use 'nvim-telescope/telescope-media-files.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
