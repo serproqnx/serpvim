@@ -1,10 +1,11 @@
 local nnoremap = require("serp.keymap").nnoremap
+local vnoremap = require("serp.keymap").vnoremap
 
 if vim.fn.has("unix") == 1 then
 --	print("Platform: unix")
   run_term_string = "term://bash"
   nnoremap("<leader>`", "<cmd>split term://bash<CR>")
-	cfg_dir = "~/.config/nvim" 
+	cfg_dir = "~/.config/nvim"
 elseif vim.fn.has("win32") == 1 then
 --	print("Platform: win32")"
   run_term_string = ":vsplit term://pwsh"
@@ -63,6 +64,7 @@ nnoremap("m", [[<cmd>lua require('flash').jump({ search = { mode = function(str)
 
 -- nnoremap("<leader>xx", "<cmd>TroubleToggle<CR>")
 -- nnoremap("<leader>xx", "<cmd>TroubleToggle<CR>")
+
 vim.keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<cr>",
   {silent = true, noremap = true}
 )
@@ -81,3 +83,7 @@ vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",
 vim.keymap.set("n", "gR", "<cmd>TroubleToggle lsp_references<cr>",
   {silent = true, noremap = true}
 )
+
+-- AI Gen
+vnoremap("<leader>a", ":Gen<CR>")
+nnoremap("<leader>ai", ":Gen <CR>")
